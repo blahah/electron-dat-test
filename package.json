@@ -1,0 +1,20 @@
+{
+  "name": "electron-dat-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "dat": "^13.7.0",
+    "electron": "^1.6.6",
+    "mirror-folder": "^2.1.1"
+  },
+  "scripts": {
+    "e": "rm -rf ./electron_data; time electron electron.js",
+    "n": "rm -rf ./node_data; time node node.js",
+    "compare": "npm run e && npm run n"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
